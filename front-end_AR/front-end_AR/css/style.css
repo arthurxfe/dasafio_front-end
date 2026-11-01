@@ -1,0 +1,146 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --cor1:#D9965B;
+    --cor2:#A6592D;
+    --cor3:#D9BDAD;
+    --cor4:#592816;
+    --cor5:#735555;
+}
+html{
+    font-family: 62.5%;
+    scroll-behavior: smooth;
+    
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--cor5);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    box-shadow: 0 2px rgba(0, 0, 0, 0.521); 
+    line-height: 60px;
+
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    
+}
+a{
+    text-decoration: none;
+}
+.logo{
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--cor2);
+    text-shadow: 1px 1px black;
+    text-decoration: none;
+    padding-left: 20px;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    gap: 5px;
+}
+.navbar a:link, .navbar a:visited{
+    text-decoration: none;
+    padding:  10px 15px;
+    color: white;
+    text-shadow: #592816;
+    border-radius: 5px ;
+    transition: background-color 0.3s ease;
+
+}
+
+.navbar a:hover, .navbar a:active{
+    background-color: #A6592D;
+    
+}
+#hero{
+    background-image: url('../img/hero.jpg');
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+ 
+}
+h1{
+    text-align: center;
+    padding: 40px 0;
+    font-size: 3em;
+}
+section{
+    padding: 50px 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#gallery{
+    display: block;
+    gap: 10px;
+    text-align: center;
+    background-color: #592816;
+}
+#gallery img{
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    display: inline-block;
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.171);
+    transition: transform 0.3s ease;
+    
+    
+}
+#gallery img:hover{
+    transform: scale(1.05);
+} 
+#about{
+    background-color: #D9965B;
+
+}
+#about p{
+    font-size: 2rem;
+    line-height: 2.6rem;
+    text-align: justify;
+    margin: 700px;
+    margin: 0 auto;
+
+}
+#map{
+    padding: 0;
+}
+#contact{
+    background-color: #A6592D;
+    align-items: center;
+}
+#contact form{
+    width: 100%;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+#ontact label{
+    font-size: 1.6rem;
+    margin-bottom: 5px;
+    font-weight: bold;
+
+}
+
+
+
+
